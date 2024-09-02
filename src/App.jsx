@@ -1,38 +1,27 @@
 import React from 'react';
 import './App.css';
-// import Sec1 from './Sec1';
-import Sec2 from './Sec2';
-// import Sec3 from './Sec3';
-import Coin from './Coin';
+
 import ButtonAppBar from './AppBar';
+import HomePage from './New';
+import { Home } from '@mui/icons-material';
+import { Router } from 'react-router-dom';
+import { BrowserRouter as Routes, Route, Link } from 'react-router-dom';
+import Drewer from './Drewer';
+import LoginPage from './Login';
+
 // import { Button } from 'flowbite-react';
 
 
 function App() {
   return (
     <>
-    <ButtonAppBar></ButtonAppBar>
 
-      {/* <div className='container'>
-        <div className='name '>
-          <h1>salma hamed</h1>
-          <h3>front end developer</h3>
-        </div>
+    {/* <ButtonAppBar></ButtonAppBar> */}
+    {/* <HomePage></HomePage> */}
 
-        {/* <div className="content">
-          <Sec1 />
-          <Sec2 />
-          <Sec3 />
-        </div>
-      </div> */}
-
-
-{/* <Coin/> */}
-
-
-
-
-    {/* </div>  */}
+     <Drewer></Drewer>
+     {/* <LoginPage></LoginPage> */}
+     
     </>
   );
 }
